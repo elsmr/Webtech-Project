@@ -43,3 +43,15 @@ img {
 	position: absolute;
 	left: -9999px;
 }
+
+/*********************************************
+ * IMAGE REPLACEMENT
+ *********************************************/
+
+ .imagereplace {
+	display: block;
+	background-size: 100%;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}

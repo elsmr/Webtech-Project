@@ -30,6 +30,10 @@ body > * {
 	line-height: 1.5;  /* should be on body tag if it were not for a bug in Chrome */
 }
 
+textarea {
+   resize: none;
+}
+
 /* =============================================
  * HEADER
  =============================================== */

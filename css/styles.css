@@ -14,8 +14,6 @@ html {
 }
 
 * {
-	margin: 0; /* wipe out browser differences for default values */
-	padding: 0; /* wipe out browser differences for default values  */
 	-webkit-box-sizing: border-box; /* use border-box box model everywhere */
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;

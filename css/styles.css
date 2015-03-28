@@ -1,0 +1,49 @@
+/**
+ * General stylesheet for Toecourt events
+ *
+ * @author 		Elias Meire <elias.meire@student.odisee.be>
+ *
+ */
+
+/* =============================================
+ * GENERAL
+ =============================================== */
+
+html {
+	font-size: 0.625em;  /* set 1 rem = 16px * 0.625 = 10px */
+}
+
+* {
+	margin: 0; /* wipe out browser differences for default values */
+	padding: 0; /* wipe out browser differences for default values  */
+	-webkit-box-sizing: border-box; /* use border-box box model everywhere */
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	/* font and color standard declaration*/
+}
+
+body > * {
+	font-size: 1.3rem; /* should be on body tag if it were not for a bug in Chrome */
+	line-height: 1.5;  /* should be on body tag if it were not for a bug in Chrome */
+}
+
+/* =============================================
+ * HEADER
+ =============================================== */
+
+
+
+ /* =============================================
+ * CONTENT
+ =============================================== */
+
+
+
+/* =============================================
+ * FOOTER
+ =============================================== */

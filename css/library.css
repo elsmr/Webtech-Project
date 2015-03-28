@@ -1,0 +1,57 @@
+/**
+ * Helper stylesheet for multiple projects
+ *
+ * @author		Bram(us) Van Damme <bramus.vandamme@kahosl.be>
+ * @author		Rogier van der Linde <rogier.vanderlinde@kahosl.be>
+ * @author		Elias Meire <elias.meire@student.odisee.be>
+ * 
+ */
+
+
+/*********************************************
+ * CLEARFIX
+ *********************************************/
+
+.clearfix:after { 
+	content: ""; 
+	display: table; 
+	clear: both; 
+} 
+.clearfix { 
+	zoom: 1;
+}
+
+
+/*********************************************
+ * RESET
+ *********************************************/
+
+* {
+	margin: 0; /* overwrite browser defaults */
+	padding: 0;
+}
+
+img {
+	border: 0;
+}
+	
+/*********************************************
+ * STRUCTURAL TITLES
+ *********************************************/
+
+.structural {
+	position: absolute;
+	left: -9999px;
+}
+
+/*********************************************
+ * IMAGE REPLACEMENT
+ *********************************************/
+
+ .imagereplace {
+	display: block;
+	background-size: 100%;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}

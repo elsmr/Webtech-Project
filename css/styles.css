@@ -48,7 +48,7 @@ body > * {
  =============================================== */
 
 h1 a {
-	background-image: url(../img/logo_green.png);
+	background-image: url(../img/logo.png);
 	float: left;
 	width: 28rem;
 	height: 10.2rem;
@@ -66,6 +66,8 @@ header {
 	background-color: #EBECE4;
 
 }
+
+/* ================ TOOLBAR  ================= */
 
 #toolbar {
 	float: right;
@@ -106,6 +108,8 @@ header {
 .socialmedia .twitter { background-position: -17.5rem, 0rem;}
 .socialmedia .googleplus { background-position: -5rem, 0rem;}
 
+/* ================ MAIN MENU  ================= */
+
 #mainmenu {
 	margin-top: 12.3rem;
 	float: right;
@@ -113,6 +117,10 @@ header {
 
 #mainmenu li {
 	display: inline-block;
+}
+
+#mainmenu li + li {
+	margin-left: 0.7rem;
 }
 
 #mainmenu a {
@@ -135,15 +143,10 @@ header {
 	background-color: #67C83D;
 }
 
-#mainmenu li + li {
-	margin-left: 0.7rem;
-}
-
 #mainmenu a#active {
 	color: #fff;
 	background-color: #67C83D;
 }
-
 
  /* =============================================
  * CONTENT

@@ -22,30 +22,102 @@ html {
 }
 
 body {
-	/* font and color standard declaration*/
+	font-family: "Open Sans"; /* font and color standard declaration*/
 }
 
 body > * {
-	font-size: 1.3rem; /* should be on body tag if it were not for a bug in Chrome */
-	line-height: 1.5;  /* should be on body tag if it were not for a bug in Chrome */
+	font-size: 1.3rem;
+	line-height: 1.5;
 }
 
-textarea {
-   resize: none;
+.wrapper {
+	margin: 0 auto;
+	padding: 0rem 2rem;
+	min-width: 48rem;
+	max-width: 98rem;
 }
+
 
 /* =============================================
  * HEADER
  =============================================== */
 
+h1 a {
+	background-image: url(../img/logo.png);
+	float: left;
+	width: 21rem;
+	height: 8.72rem;
+}
+
+header section:first-of-type {
+	background-color: #484545;
+	height: 4rem;
+}
+
+.socialmedia {
+	float: right;
+	padding-top: 0.75rem;
+}
+
+.socialmedia li {
+	display: inline-block;
+}
+
+.socialmedia a {
+	background-image: url(../img/socialsprite.png);
+	background-size: 1100% 100%;
+	width: 2.5rem;
+	height: 2.5rem;
+	display: inherit;
+}
+
+.socialmedia .facebook { background-position: 0rem, 0rem;}
+.socialmedia .twitter { background-position: -17.5rem, 0rem;}
+.socialmedia .googleplus { background-position: -5rem, 0rem;}
+
+#mainmenu {
+	margin-top: 10rem;
+	float: right;
+}
+
+#mainmenu li {
+	display: inline-block;
+}
 
 
  /* =============================================
  * CONTENT
  =============================================== */
 
+textarea {
+   resize: none;
+}
 
+img {
+	height: 20%;
+	width: 20%;
+}
+
+ul {
+	list-style: none;
+}
 
 /* =============================================
  * FOOTER
  =============================================== */
+
+footer {
+	background-color: #484545;
+	height: 5.5rem;
+}
+
+footer a {
+	background-image: url(../img/logo_inv.png);
+	float: left;
+	width: 9.59rem;
+	height: 5rem;
+}
+
+footer p {
+	float: right;
+}

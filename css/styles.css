@@ -28,13 +28,18 @@ body {
 body > * {
 	font-size: 1.3rem;
 	line-height: 1.5;
+	back
 }
 
 .wrapper {
 	margin: 0 auto;
-	padding: 0rem 2rem;
+	overflow: hidden;
 	min-width: 48rem;
 	max-width: 98rem;
+}
+
+.wrapper > *:not(h1){
+	padding: 0rem 2rem;
 }
 
 
@@ -43,10 +48,11 @@ body > * {
  =============================================== */
 
 h1 a {
-	background-image: url(../img/logo.png);
+	background-image: url(../img/logo_green.png);
 	float: left;
-	width: 21rem;
-	height: 8.72rem;
+	width: 28rem;
+	height: 10.2rem;
+	margin-top: 3rem;
 }
 
 header section:first-of-type {
@@ -54,9 +60,34 @@ header section:first-of-type {
 	height: 4rem;
 }
 
-.socialmedia {
+header {
+	height: 20rem;
+	text-align: right;
+	background-color: #EBECE4;
+
+}
+
+#toolbar {
 	float: right;
 	padding-top: 0.75rem;
+	color: #fff;
+	background-color: #484545;
+	background-size: 500%;
+	font-size: 1.6rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	line-height: 1.2;
+    border-radius: 0.5rem;
+}
+
+#toolbar p:last-child {
+	padding-bottom: 2rem;
+	font-size: 2.4rem;
+	text-align: center;
+}
+
+#toolbar p:first-of-type {
+	padding-top: 2rem;
 }
 
 .socialmedia li {
@@ -76,12 +107,41 @@ header section:first-of-type {
 .socialmedia .googleplus { background-position: -5rem, 0rem;}
 
 #mainmenu {
-	margin-top: 10rem;
+	margin-top: 12.3rem;
 	float: right;
 }
 
 #mainmenu li {
 	display: inline-block;
+}
+
+#mainmenu a {
+	display: block;
+	width: 9.5rem;
+	padding: 0.3rem 0;
+	border-radius: 0.3rem;
+	color: #484545;
+	font-size: 1.4rem;
+	font-weight: 800;	
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;	
+	transition: color 0.4s ease 0s;
+	transition: background-color 0.4s ease 0s;
+}
+
+#mainmenu a:hover {
+	color: #fff;
+	background-color: #67C83D;
+}
+
+#mainmenu li + li {
+	margin-left: 0.7rem;
+}
+
+#mainmenu a#active {
+	color: #fff;
+	background-color: #67C83D;
 }
 
 

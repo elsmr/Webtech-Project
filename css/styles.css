@@ -28,18 +28,13 @@ body {
 body > * {
 	font-size: 1.3rem;
 	line-height: 1.5;
-	back
 }
 
 .wrapper {
 	margin: 0 auto;
-	overflow: hidden;
+	padding: 0rem 2rem;
 	min-width: 48rem;
 	max-width: 98rem;
-}
-
-.wrapper > *:not(h1){
-	padding: 0rem 2rem;
 }
 
 
@@ -50,9 +45,8 @@ body > * {
 h1 a {
 	background-image: url(../img/logo.png);
 	float: left;
-	width: 28rem;
-	height: 10.2rem;
-	margin-top: 3rem;
+	width: 21rem;
+	height: 8.72rem;
 }
 
 header section:first-of-type {
@@ -60,6 +54,7 @@ header section:first-of-type {
 	height: 4rem;
 }
 
+<<<<<<< HEAD
 header {
 	height: 20rem;
 	text-align: right;
@@ -70,26 +65,11 @@ header {
 /* ================ TOOLBAR  ================= */
 
 #toolbar {
+=======
+.socialmedia {
+>>>>>>> parent of 0388e69... Style for header
 	float: right;
 	padding-top: 0.75rem;
-	color: #fff;
-	background-color: #484545;
-	background-size: 500%;
-	font-size: 1.6rem;
-	font-weight: 800;
-	text-transform: uppercase;
-	line-height: 1.2;
-    border-radius: 0.5rem;
-}
-
-#toolbar p:last-child {
-	padding-bottom: 2rem;
-	font-size: 2.4rem;
-	text-align: center;
-}
-
-#toolbar p:first-of-type {
-	padding-top: 2rem;
 }
 
 .socialmedia li {
@@ -111,7 +91,7 @@ header {
 /* ================ MAIN MENU  ================= */
 
 #mainmenu {
-	margin-top: 12.3rem;
+	margin-top: 10rem;
 	float: right;
 }
 
@@ -119,6 +99,7 @@ header {
 	display: inline-block;
 }
 
+<<<<<<< HEAD
 #mainmenu li + li {
 	margin-left: 0.7rem;
 }
@@ -147,6 +128,8 @@ header {
 	color: #fff;
 	background-color: #67C83D;
 }
+=======
+>>>>>>> parent of 0388e69... Style for header
 
  /* =============================================
  * CONTENT

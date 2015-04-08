@@ -32,21 +32,28 @@ body > * {
 
 .wrapper {
 	margin: 0 auto;
-	padding: 0rem 2rem;
 	min-width: 48rem;
-	max-width: 98rem;
+	max-width: 96rem;
 }
 
+em {
+	color: #4AAD1F;
+	font-style: normal;
+}
 
 /* =============================================
  * HEADER
  =============================================== */
 
+/* ================ GENERAL  ================= */
+
 h1 a {
 	background-image: url(../img/logo.png);
 	float: left;
-	width: 21rem;
-	height: 8.72rem;
+	width: 25rem;
+	height: 9rem;
+	clear: both;
+	margin: 3.75rem 0;
 }
 
 header section:first-of-type {
@@ -54,52 +61,78 @@ header section:first-of-type {
 	height: 4rem;
 }
 
-<<<<<<< HEAD
 header {
 	height: 20rem;
-	text-align: right;
 	background-color: #EBECE4;
-
+	text-align: right;
+	font-weight: 700;
 }
 
-/* ================ TOOLBAR  ================= */
+/* ================ SOCIAL  ================= */
 
-#toolbar {
-=======
 .socialmedia {
->>>>>>> parent of 0388e69... Style for header
 	float: right;
-	padding-top: 0.75rem;
+	background-color: #484545;
+	margin: 0 -9999rem; /* CSS hack for full width background color */
+	padding: 0.5rem 9999rem; /* CSS hack for full width background color */
 }
 
 .socialmedia li {
 	display: inline-block;
+	float: left;
+}
+
+.socialmedia li + li {
+	margin-left: 0.3rem;
+}
+
+.socialmedia li:last-child {
+	padding-right: 2rem;
 }
 
 .socialmedia a {
+	display: block;
 	background-image: url(../img/socialsprite.png);
-	background-size: 1100% 100%;
+	background-size: 27.5rem 2.5rem;
+	background-repeat: no-repeat;
 	width: 2.5rem;
 	height: 2.5rem;
-	display: inherit;
 }
 
 .socialmedia .facebook { background-position: 0rem, 0rem;}
 .socialmedia .twitter { background-position: -17.5rem, 0rem;}
 .socialmedia .googleplus { background-position: -5rem, 0rem;}
 
+/* ================ CALL ME BOX  ================= */
+
+#call {
+	float: right;
+	color: #fff;	
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	line-height: 2.4rem;
+	background-color: #484545;
+	border-radius: 0 0 0.5rem 0.5rem;
+    padding: 1rem 2rem 2rem 2rem;   
+}
+
+#call p:last-child {
+	font-size: 2.4rem;
+	text-align: center;
+}
+
 /* ================ MAIN MENU  ================= */
 
 #mainmenu {
-	margin-top: 10rem;
+	clear: right;
 	float: right;
+	margin-top: 5rem;
 }
 
 #mainmenu li {
-	display: inline-block;
+	float: left;
 }
 
-<<<<<<< HEAD
 #mainmenu li + li {
 	margin-left: 0.7rem;
 }
@@ -110,13 +143,12 @@ header {
 	padding: 0.3rem 0;
 	border-radius: 0.3rem;
 	color: #484545;
-	font-size: 1.4rem;
-	font-weight: 800;	
+	font-size: 1.4rem;	
 	text-decoration: none;
 	text-align: center;
 	text-transform: uppercase;	
-	transition: color 0.4s ease 0s;
-	transition: background-color 0.4s ease 0s;
+	transition: color 0.5s ease 0s;
+	transition: background-color 0.5s ease 0s;
 }
 
 #mainmenu a:hover {
@@ -128,8 +160,6 @@ header {
 	color: #fff;
 	background-color: #67C83D;
 }
-=======
->>>>>>> parent of 0388e69... Style for header
 
  /* =============================================
  * CONTENT
@@ -155,15 +185,21 @@ ul {
 footer {
 	background-color: #484545;
 	height: 5.5rem;
+	line-height: 5.5rem;
+	color: #fff;
+}
+
+footer p:first-child {
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	font-weight: 700;
+	float: left;
+}
+
+footer p:last-child {
+	float: right;
 }
 
 footer a {
-	background-image: url(../img/logo_inv.png);
-	float: left;
-	width: 9.59rem;
-	height: 5rem;
-}
-
-footer p {
-	float: right;
+	color: inherit;
 }

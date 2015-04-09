@@ -131,6 +131,7 @@ header {
 
 #mainmenu li {
 	float: left;
+	position: relative; /* absolute-relative positioning for dropdown menu*/
 }
 
 #mainmenu > ul > li + li {
@@ -165,10 +166,11 @@ header {
 
 #mainmenu li ul {
 	visibility: hidden;
+	position: absolute; /* absolute-relative positioning for dropdown menu*/
 }
 
 #mainmenu li:hover ul {
-	visibility: visible;
+   visibility: visible;
 }
 
 #mainmenu li li {
@@ -177,7 +179,7 @@ header {
 }
 
 #mainmenu li li a {
-	transition: color 0.5s ease 0s;
+	transition: color 0.5s ease 0s; /* needs to be defined again, not sure why */
 }
 
 #mainmenu li li:first-child {

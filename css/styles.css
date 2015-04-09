@@ -133,7 +133,7 @@ header {
 	float: left;
 }
 
-#mainmenu li + li {
+#mainmenu > ul > li + li {
 	margin-left: 0.7rem;
 }
 
@@ -160,6 +160,35 @@ header {
 	color: #fff;
 	background-color: #67C83D;
 }
+
+/* ================ DROPDOWN MENU  ================= */
+
+#mainmenu li ul {
+	visibility: hidden;
+}
+
+#mainmenu li:hover ul {
+	visibility: visible;
+}
+
+#mainmenu li li {
+	background-color: #67C83D;
+	float: none;
+}
+
+#mainmenu li li a {
+	transition: color 0.5s ease 0s;
+}
+
+#mainmenu li li:first-child {
+	border-radius: 0.3rem 0.3rem 0 0;
+	margin-top: 0.5rem;
+}
+
+#mainmenu li li:last-child {
+	border-radius: 0 0 0.3rem 0.3rem;
+}
+
 
  /* =============================================
  * CONTENT

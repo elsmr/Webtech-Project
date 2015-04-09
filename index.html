@@ -46,49 +46,63 @@
 	<!-- END HEADER -->
 
 	<!-- CONTENT -->
-	<div class="wrapper">
-		<section>
-			<h2>Elk idee een concept</h2>
-			<img src="img/eventphoto.jpg" alt="Foto op event in de Oude Vismijn te Gent" />
-			<p>
-				Toecourt gaat aan de slag met elk idee. Als evenementenbureau staan we klaar met onze creatieve hersenspinsels.
-			</p>
+	<div class="wrapper clearfix">
+		<section class="clearfix">
+			<img class="column" src="img/eventphoto.jpg" alt="Foto op event in de Oude Vismijn te Gent" />
+			<div class="column">
+				<h2>Elk idee een concept</h2>
+				<p>
+					Toecourt gaat aan de slag met elk idee. Als evenementenbureau staan we klaar met onze creatieve hersenspinsels.
+				</p>
+				<a href="contact.html">Contacteer ons</a>
+			</div>
 		</section>
-	</div>
 	
-	<div class="wrapper">
 		<div class="column">
-			<section>
+			<section class="form">
 				<h2>Krijg een offerte</h2>
-				<p>Vraag vandaag een gratis offerte aan</p>
-				<form action="#">
-					<ul>
-						<li><input type="text" id="name" name="name" placeholder="Naam" required /></li>
-						<li><input type="text" id="email" name="email" placeholder="Email" required /></li>
-						<li><input type="text" id="onderwerp" name="onderwerp" placeholder="Onderwerp" required /></li>
-						<li><textarea name="boodschap" cols="20" rows="5" placeholder="Boodschap"></textarea></li>
-					</ul>
-					<p><input type="submit" value="Send" /></p>
-				</form>
+				<div class="contentblock clearfix">
+					<p>Vraag vandaag een gratis offerte aan</p>
+					<form action="#">
+						<dl>
+							<dt><label for="name" class="structural">Full name:</label></dt>
+							<dd><input type="text" id="name" name="name" placeholder="Naam" required /></dd>
+
+							<dt><label for="email" class="structural">Email:</label></dt>
+							<dd><input type="text" id="email" name="email" placeholder="Email" required /></dd>
+
+							<dt><label for="onderwerp" class="structural">Subject:</label></dt>
+							<dd><input type="text" id="onderwerp" name="onderwerp" placeholder="Onderwerp" required /></dd>
+
+							<dt><label for="boodschap" class="structural">Message:</label></dt>
+							<dd><textarea name="boodschap" cols="20" rows="5" placeholder="Boodschap"></textarea></dd>
+						</dl>
+						<p><input type="submit" value="Send" /></p>
+					</form>
+				</div>
 			</section>
 		</div>
 
 		<div class="column">			
-			<section>
+			<section id="voordelen">
 				<h2 class="structural">Voordelen</h2>
 				<section>
 					<h3>Persoonlijke aanpak</h3>
-					<img src="img/personal.png" alt="Persoonlijke uitwerking concept" />
-					<p>
-						We genieten van een persoonlijk contact met onze klanten. We ontwikkelen graag een voorstel op maat. 
-					</p>
+					<div class="contentblock clearfix">
+						<img src="img/personal.png" alt="Persoonlijke uitwerking concept" />
+						<p>
+							We genieten van een persoonlijk contact met onze klanten. We ontwikkelen graag een voorstel op maat. 
+						</p>
+					</div>
 				</section>
 				<section>
 					<h3>Vers en fris</h3>
-					<img src="img/food.jpg" alt="Hapjes op een event" />
-					<p>
-						We werken met verse producten. Je ziet dit niet alleen aan het resultaat. Je proeft het gewoon!
-					</p>
+					<div class="contentblock clearfix">
+						<img src="img/food.jpg" alt="Hapjes op een event" />
+						<p>
+							We werken met verse producten. Je ziet dit niet alleen aan het resultaat. Je proeft het gewoon!
+						</p>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -97,7 +111,7 @@
 
 	<!-- FOOTER -->
 	<footer>
-		<div class="wrapper">
+		<div class="wrapper clearfix">
 			<p><em>Toecourt</em> events</p>
 			<p>© 2023 by The event company. Proudly created with <a href="#">Elias.com</a></p>
 		</div>

@@ -9,20 +9,71 @@
  * GENERAL
  =============================================== */
 
+.wrapper > section:first-child .column {
+	width: 50%;
+}
 
+.wrapper > section:first-child .column + .column {
+	padding-left: 3rem;
+	margin-top: 5rem;
+}
 
-/* =============================================
- * HEADER
- =============================================== */
+.wrapper > section:first-child .column p {
+	margin-bottom: 5rem;
+	font-size: 1.6rem;
+}
 
+.wrapper > section:first-child .column a {
+	padding: 0.7rem 3rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	background-color: #9B4F92;
+	border-radius: 0.3rem;
+	transition: background-color 0.5s ease 0s;
+}
 
+.wrapper > section:first-child .column a:hover {
+	background-color: #67C83D;
+}
 
- /* =============================================
- * CONTENT
- =============================================== */
+.wrapper > .column {
+	margin: 3rem 0;
+	width: 50%;
+}
 
+.wrapper > .column h2, .wrapper > .column h3 {
+	margin-left: 2rem;
+}
 
+.wrapper > div:first-of-type {
+	padding-right: 1.5rem;
+}
 
-/* =============================================
- * FOOTER
- =============================================== */
+.form p:first-of-type {
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #67C83D;
+}
+.wrapper > .column + .column {
+	padding-left: 1.5rem;
+}
+
+#voordelen img {
+	float: left;
+	width: 30%;
+}
+
+#voordelen section {
+	clear: both;
+}
+
+#voordelen section:last-of-type {
+	margin-top: 5.5rem;
+}
+
+#voordelen p {
+	float: left;
+	width: 70%;
+	padding-left: 2rem;
+}

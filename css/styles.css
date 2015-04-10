@@ -30,6 +30,10 @@ body > * {
 	line-height: 1.5;
 }
 
+html, body {
+	overflow-x: hidden;
+}
+
 .wrapper {
 	margin: 0 auto;
 	min-width: 48rem;
@@ -233,11 +237,12 @@ form dd > input, textarea {
 	background-color: #7A7878;
 	width: 100%;
 	font-family: "Open Sans";
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 	margin-top: 0.5rem;
 	border-radius: 0.3rem;
 	padding: 0.5rem;
 	border: none;
+	color: #fff;
 }
 
 form dd:first-of-type > input {

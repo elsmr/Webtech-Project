@@ -31,7 +31,7 @@ body > * {
 }
 
 html, body {
-	overflow-x: hidden;
+	overflow-x: hidden; /* CSS hack for full width background color (hide horizontal overflow) */
 }
 
 .wrapper {
@@ -115,7 +115,7 @@ header {
 	text-transform: uppercase;
 	line-height: 2.4rem;
 	background-color: #484545;
-	border-radius: 0 0 0.5rem 0.5rem;
+	border-radius: 0 0 0.6rem 0.6rem;
     padding: 1rem 2rem 2rem 2rem;   
 }
 
@@ -186,12 +186,12 @@ header {
 }
 
 #mainmenu li li:first-child {
-	border-radius: 0.3rem 0.3rem 0 0;
+	border-radius: 0.6rem 0.6rem 0 0;
 	margin-top: 0.5rem;
 }
 
 #mainmenu li li:last-child {
-	border-radius: 0 0 0.3rem 0.3rem;
+	border-radius: 0 0 0.6rem 0.6rem;
 }
 
 
@@ -213,7 +213,7 @@ h2, h3 {
 	width: 100%;
 	padding: 2rem;
 	background-color: #F3F3F3;
-	border-radius: 0.3rem;
+	border-radius: 0.6rem;
 	box-shadow: 0 0 1rem #A8A8A8;
 }
 
@@ -223,7 +223,7 @@ h2, h3 {
 
 .contentblock {
 	background-color: #F3F3F3;
-	border-radius: 0.3rem;
+	border-radius: 0.6rem;
 	padding: 2rem;
 }
 
@@ -239,16 +239,11 @@ form dd > input, textarea {
 	font-family: "Open Sans";
 	font-size: 1.6rem;
 	margin-top: 0.5rem;
-	border-radius: 0.3rem;
+	border-radius: 0.6rem;
 	padding: 0.5rem;
 	border: none;
 	color: #fff;
 }
-
-form dd:first-of-type > input {
-	margin-top: 2rem;
-}
-
 
 form textarea {
    resize: none;
@@ -259,7 +254,7 @@ form p input {
 	background-color: #67C83D;
 	color: #fff;
 	padding: 0.5rem 0.7rem;
-	border-radius: 0.3rem;
+	border-radius: 0.6rem;
 	float: right;
 	border: none;
 	font-size: 1.6rem;

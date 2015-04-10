@@ -7,6 +7,27 @@
 	<link rel="stylesheet" href="css/library.css" />
 	<link rel="stylesheet" href="css/contact.css" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,800,400' rel='stylesheet' type='text/css'>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script>
+		function initialize() {
+			var myLatlng = new google.maps.LatLng(51.056188, 3.721155);
+			var mapCanvas = document.getElementById('gmap');
+			var mapOptions = {
+				center: myLatlng,
+				zoom: 17,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				disableDefaultUI: true,
+				zoomControl: true
+			}
+			var map = new google.maps.Map(mapCanvas, mapOptions)
+			var marker = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				title:"Oude Vismijn"
+			});
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
 </head>
 <body>
 	<!-- HEADER -->
@@ -46,31 +67,41 @@
 	<!-- HEADER END -->
 
 	<!-- CONTENT -->
-	<section id="contact">
-		<div class="column">
-			<h2>Contact</h2>
-			<p>Oude Vismijn</p>
-			<p>Sint-Veerleplein 5</p>
-			<p>9000 Gent</p>
-			<p>T: 123-456-7890</p>
-			<p>info@eliasmeire.com</p>
-		</div>
-		<div class="column">
-			<form action="#">
-				<ul>
-					<li><input type="text" id="name" name="name" placeholder="Naam" required /></li>
-					<li><input type="text" id="email" name="email" placeholder="Email" required /></li>
-					<li><input type="text" id="onderwerp" name="onderwerp" placeholder="Onderwerp" required /></li>
-					<li><textarea name="boodschap" cols="20" rows="5" placeholder="Boodschap"></textarea></li>
-				</ul>
-				<p><input type="submit" value="Send" /></p>
-			</form>
-		</div>
-	</section>
+	<div class="wrapper">
+		<section class="clearfix">
+			<div class="column">
+				<h2>Contact</h2>
+				<p>Oude Vismijn</p>
+				<p>Sint-Veerleplein 5</p>
+				<p>9000 Gent</p>
+				<p>T: 123-456-7890</p>
+				<p>info@eliasmeire.com</p>
+			</div>
+			<div class="column">
+				<form action="#">
+					<dl>
+						<dt><label for="name" class="structural">Full name:</label></dt>
+						<dd><input type="text" id="name" name="name" placeholder="Naam" required /></dd>
 
-	<section>
-		<!-- TODO: ADD GOOGLE MAP -->
-	</section>
+						<dt><label for="email" class="structural">Email:</label></dt>
+						<dd><input type="text" id="email" name="email" placeholder="Email" required /></dd>
+
+						<dt><label for="onderwerp" class="structural">Subject:</label></dt>
+						<dd><input type="text" id="onderwerp" name="onderwerp" placeholder="Onderwerp" required /></dd>
+
+						<dt><label for="boodschap" class="structural">Message:</label></dt>
+						<dd><textarea id ="boodschap" name="boodschap" cols="20" rows="5" placeholder="Boodschap"></textarea></dd>
+					</dl>
+					<p><input type="submit" value="Send" /></p>
+				</form>
+			</div>
+		</section>
+
+		<section>
+			<h2 class="structural">Google Map</h2>
+			<div id="gmap"></div>
+		</section>
+	</div>
 	<!-- CONTENT END -->
 
 	<!-- FOOTER -->

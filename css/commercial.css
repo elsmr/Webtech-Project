@@ -9,20 +9,23 @@
  * GENERAL
  =============================================== */
 
+.wrapper > section:first-child * {
+	width: 100%;
+}
 
- 
-/* =============================================
- * HEADER
- =============================================== */
+.wrapper > section:first-child h2 {
+	margin: 1rem 0;
+}
 
+.wrapper > section:first-child p {
+	margin-bottom: 2rem;
+}
 
+.wrapper > section:nth-child(2) div {
+	width: 31.25%;
+	margin: 3rem 0;
+}
 
- /* =============================================
- * CONTENT
- =============================================== */
-
-
-
-/* =============================================
- * FOOTER
- =============================================== */
+.wrapper > section:nth-child(2) div + div{
+	margin-left: 3rem;
+}

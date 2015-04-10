@@ -186,12 +186,12 @@ header {
 }
 
 #mainmenu li li:first-child {
-	border-radius: 0.6rem 0.6rem 0 0;
+	border-radius: 0.3rem 0.3rem 0 0;
 	margin-top: 0.5rem;
 }
 
 #mainmenu li li:last-child {
-	border-radius: 0 0 0.6rem 0.6rem;
+	border-radius: 0 0 0.3rem 0.3rem;
 }
 
 

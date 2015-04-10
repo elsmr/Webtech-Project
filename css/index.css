@@ -18,7 +18,7 @@
 /* ================ TEXT COLUMN  ================= */
 
 .wrapper > section:first-child .column + .column {
-	padding-left: 3rem;
+	padding: 0 6rem 0 3rem;
 	margin-top: 5rem;
 }
 

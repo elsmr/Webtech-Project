@@ -67,7 +67,7 @@ form dd:first-of-type > input {
 	margin-top: 2rem;
 }
 
-.form p:first-of-type {
+.wrapper > div:first-of-type div p:first-child {
 	text-transform: uppercase;
 	font-size: 1.6rem;
 	font-weight: 400;

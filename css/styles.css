@@ -26,8 +26,8 @@ body {
 }
 
 body > * {
-	font-size: 1.5rem;
 	line-height: 1.5;
+	font-size: 1.5rem;
 }
 
 html, body {
@@ -35,14 +35,14 @@ html, body {
 }
 
 .wrapper {
-	margin: 0 auto;
 	min-width: 48rem;
 	max-width: 96rem;
+	margin: 0 auto;
 }
 
 em {
-	color: #4AAD1F;
 	font-style: normal;
+	color: #4AAD1F;
 }
 
 /* =============================================
@@ -52,33 +52,33 @@ em {
 /* ================ GENERAL  ================= */
 
 h1 a {
-	background-image: url(../img/logo.png);
 	float: left;
 	width: 25rem;
 	height: 9rem;
-	clear: both;
 	margin: 3.75rem 0;
+	clear: both;
+	background-image: url(../img/logo.png);	
 }
 
 header section:first-of-type {
-	background-color: #484545;
 	height: 4rem;
+	background-color: #484545;
 }
 
 header {
 	height: 20rem;
-	background-color: #EBECE4;
+	font-weight: 700;	
 	text-align: right;
-	font-weight: 700;
+	background-color: #EBECE4;	
 }
 
 /* ================ SOCIAL ================= */
 
 .socialmedia {
 	float: right;
-	background-color: #484545;
 	margin: 0 -9999rem; /* CSS hack for full width background color */
 	padding: 0.5rem 9999rem; /* CSS hack for full width background color */
+	background-color: #484545;
 }
 
 .socialmedia li {
@@ -96,10 +96,10 @@ header {
 
 .socialmedia a {
 	display: block;
-	background-image: url(../img/socialsprite.png);
-	background-size: 27.5rem 2.5rem;
 	width: 2.5rem;
 	height: 2.5rem;
+	background-image: url(../img/socialsprite.png);
+	background-size: 27.5rem 2.5rem;
 }
 
 .socialmedia .twitter { background-position: -17.5rem, 0;}
@@ -110,13 +110,13 @@ header {
 
 #call {
 	float: right;
-	color: #fff;	
+	line-height: 2.4rem;
+	padding: 1rem 2rem 2rem 2rem;
 	font-size: 1.6rem;
 	text-transform: uppercase;
-	line-height: 2.4rem;
+	color: #fff;
 	background-color: #484545;
 	border-radius: 0 0 0.6rem 0.6rem;
-    padding: 1rem 2rem 2rem 2rem;   
 }
 
 #call p:last-child {
@@ -127,14 +127,14 @@ header {
 /* ================ MAIN MENU  ================= */
 
 #mainmenu {
-	clear: right;
 	float: right;
 	margin-top: 5rem;
+	clear: right;
 }
 
 #mainmenu li {
 	float: left;
-	position: relative; /* absolute-relative positioning for dropdown menu*/
+	position: relative; /* absolute-relative positioning for dropdown menu */
 }
 
 #mainmenu > ul > li + li {
@@ -145,12 +145,12 @@ header {
 	display: block;
 	width: 9.5rem;
 	padding: 0.3rem 0;
-	border-radius: 0.3rem;
-	color: #484545;
 	font-size: 1.4rem;	
 	text-decoration: none;
 	text-align: center;
-	text-transform: uppercase;	
+	text-transform: uppercase;
+	color: #484545;
+	border-radius: 0.3rem;	
 	transition: color 0.5s ease 0s;
 	transition: background-color 0.5s ease 0s;
 }
@@ -177,8 +177,8 @@ header {
 }
 
 #mainmenu li li {
-	background-color: #67C83D;
 	float: none;
+	background-color: #67C83D;
 }
 
 #mainmenu li li a {
@@ -186,18 +186,19 @@ header {
 }
 
 #mainmenu li li:first-child {
-	border-radius: 0.3rem 0.3rem 0 0;
 	margin-top: 0.5rem;
+	border-radius: 0.3rem 0.3rem 0 0;	
 }
 
 #mainmenu li li:last-child {
 	border-radius: 0 0 0.3rem 0.3rem;
 }
 
-
  /* =============================================
  * CONTENT
  =============================================== */
+
+/* ================ GENERAL ================= */
 
 ul {
 	list-style: none;
@@ -221,10 +222,10 @@ h2, h3 {
 	float: left;
 }
 
-.contentblock {
+.contentblock {	
+	padding: 2rem;
 	background-color: #F3F3F3;
 	border-radius: 0.6rem;
-	padding: 2rem;
 }
 
 /* ================ FORM ================= */
@@ -234,37 +235,36 @@ form dd + dd {
 }
 
 form dd > input, textarea {
-	background-color: #7A7878;
 	width: 100%;
+	margin-top: 0.5rem;
+	padding: 0.5rem;
 	font-family: "Open Sans";
 	font-size: 1.6rem;
-	margin-top: 0.5rem;
-	border-radius: 0.6rem;
-	padding: 0.5rem;
-	border: none;
 	color: #fff;
+	background-color: #7A7878;
+	border: none;
+	border-radius: 0.6rem;	
 }
 
 form textarea {
-   resize: none;
-   height: 15rem;
+	height: 15rem;
+	resize: none;
 }
 
 form p input {
-	background-color: #67C83D;
-	color: #fff;
-	padding: 0.5rem 0.7rem;
-	border-radius: 0.6rem;
 	float: right;
-	border: none;
+	padding: 0.5rem 0.7rem;	
 	font-size: 1.6rem;
-	font-family: "Open Sans";
+	font-family: "Open Sans";	
+	color: #fff;
+	background-color: #67C83D;
+	border: none;
+	border-radius: 0.6rem;	
 }
 
 form p input:hover {
 	cursor: pointer;
 }
-
 
 form input:focus, form textarea:focus {
 	outline: none;
@@ -275,17 +275,17 @@ form input:focus, form textarea:focus {
  =============================================== */
 
 footer {
-	background-color: #484545;
 	height: 5.5rem;
 	line-height: 5.5rem;
 	color: #fff;
+	background-color: #484545;
 }
 
 footer p:first-child {
-	text-transform: uppercase;
+	float: left;
 	font-size: 1.8rem;
 	font-weight: 700;
-	float: left;
+	text-transform: uppercase;	
 }
 
 footer p:last-child {

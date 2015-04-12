@@ -6,7 +6,7 @@
  */
 
 /* =============================================
- * GENERAL
+ * LOREM IPSUM (1COLUMN)
  =============================================== */
 
 .wrapper > section:first-child * {
@@ -20,6 +20,10 @@
 .wrapper > section:first-child p {
 	margin-bottom: 2rem;
 }
+
+/* =============================================
+ * LOREM IPSUM DOLOR (3 COLUMN)
+ =============================================== */
 
 .wrapper > section:nth-child(2) div {
 	width: 31.25%;

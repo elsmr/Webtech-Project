@@ -52,10 +52,10 @@ em {
 /* ================ GENERAL  ================= */
 
 h1 a {
-	float: left;
+	clear: both;
 	width: 25rem;
 	height: 9rem;
-	margin-top: 3rem;
+	margin: 2rem auto 1rem auto;
 	background-image: url(../img/logo.png);
 	background-repeat: no-repeat;
 }
@@ -70,10 +70,14 @@ header {
 	background-color: #EBECE4;	
 }
 
+header .wrapper {
+	padding: 0 1rem;
+}
+
 /* ================ SOCIAL ================= */
 
 .socialmedia {
-	float: right;
+	float: left;
 	margin: 0 -9999rem; /* CSS hack for full width background color */
 	padding: 0.5rem 9999rem; /* CSS hack for full width background color */
 	background-color: #484545;
@@ -108,26 +112,26 @@ header {
 
 #call {
 	float: right;
-	clear: both;
-	line-height: 2.4rem;
-	padding: 1rem 2rem 2rem 2rem;
-	font-size: 1.6rem;
+	line-height: 3.5rem;
+	font-size: 1.2rem;
 	text-transform: uppercase;
-	color: #fff;
-	background-color: #484545;
-	border-radius: 0 0 0.6rem 0.6rem;
+	color: #888888;
+	margin-bottom: 3rem;
 }
 
-#call p:last-child {
-	font-size: 2.4rem;
-	text-align: center;
+#call p {
+	float: left;
+}
+
+#call p + p {
+	text-indent: 1rem;
 }
 
 /* ================ MAIN MENU  ================= */
 
 #mainmenu {
-	float: right;
-	margin: 1rem 0;
+	margin: 1rem auto;
+	width: 47.5rem;
 }
 
 #mainmenu li {
@@ -140,9 +144,8 @@ header {
 }
 
 #mainmenu a {
-	display: block;
-	width: 9.5rem;
-	padding: 0.3rem 0;
+	display: inline-block;
+	padding: 0.5rem 1rem;
 	font-size: 1.4rem;	
 	text-decoration: none;
 	text-align: center;
@@ -171,16 +174,19 @@ header {
 }
 
 #mainmenu li:hover ul {
-   visibility: visible;
+	visibility: visible;
 }
 
 #mainmenu li li {
 	float: none;
 	background-color: #67C83D;
+	z-index: 100;
+	text-align: center;
 }
 
 #mainmenu li li a {
 	transition: color 0.5s ease 0s; /* needs to be defined again, not sure why */
+	padding: 0.3rem 2.25rem;
 }
 
 #mainmenu li li:first-child {
@@ -272,24 +278,91 @@ form input:focus, form textarea:focus {
  =============================================== */
 
 footer {
-	height: 5.5rem;
-	line-height: 5.5rem;
 	color: #fff;
+	padding: 1.5rem 0;
 	background-color: #484545;
+	text-align: center;
 }
-
 footer p:first-child {
-	float: left;
 	font-size: 1.8rem;
 	font-weight: 700;
 	text-transform: uppercase;	
 }
 
 footer p:last-child {
-	float: right;
 	font-size: 1.2rem;
 }
 
 footer a {
 	color: inherit;
+}
+
+/* =============================================
+ * MEDIA QUERIES
+ =============================================== */
+
+@media (min-width: 60em) {
+	header .wrapper {
+		padding: 0;
+	}
+
+	h1 a {
+		clear: none;
+		float: left;
+		margin: 3rem 0 0 0;
+	}
+
+	.socialmedia {
+		float: right;
+	}
+
+	#call {
+		clear: both;
+		line-height: 2.4rem;
+		margin-bottom: 0;
+		padding: 1rem 2rem 2rem 2rem;
+		font-size: 1.6rem;
+		color: #fff;
+		background-color: #484545;
+		border-radius: 0 0 0.6rem 0.6rem;
+	}
+
+	#call p {
+		float: none;
+	}
+
+	#call p + p {
+		text-indent: 0;
+		font-size: 2.4rem;
+		text-align: center;
+	}
+
+	#mainmenu {
+		float: right;
+		width: auto;
+		margin: 1rem 0;
+	}
+
+	#mainmenu a {
+		width: 9.5rem;
+		padding: 0.3rem 0;
+	}
+
+	#mainmenu li li a {
+		padding: 0;
+	}
+
+	footer {
+		text-align: none;
+		padding: 0;
+		line-height: 5.5rem;
+	}
+
+	footer p:first-child {
+		float: left;
+	}
+
+	footer p:last-child {
+		float: right;
+	}
 }

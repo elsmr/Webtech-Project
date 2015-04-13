@@ -12,19 +12,34 @@
 /* ================ IMAGE COLUMN ================= */
 
 .wrapper > section:first-child .column {
-	width: 50%;
+	width: 100%;
+}
+
+.wrapper > section:first-child {
+	background-color: black;
+	background-clip: content-box;
+	position: relative;
+}
+
+.wrapper > section:first-child img {
+	opacity: 0.5;
 }
 
 /* ================ TEXT COLUMN  ================= */
 
 .wrapper > section:first-child .column + .column {
-	padding: 0 6rem 0 3rem;
-	margin-top: 5rem;
+	left: 0;
+	right: 0;
+	margin: 10% auto;
+	padding: 0 3.5rem;
+	position: absolute;
+	text-align: center;
 }
 
 .wrapper > section:first-child .column p {
 	margin-bottom: 5rem;
 	font-size: 1.6rem;
+	color: #fff;
 }
 
 .wrapper > section:first-child .column a {
@@ -49,7 +64,7 @@
 
 .wrapper > .column {
 	margin: 3rem 0;
-	width: 50%;
+	width: 100%;
 }
 
 .wrapper > .column h2, .wrapper > .column h3 {
@@ -58,10 +73,6 @@
 
 
 /* ================ FORM ================= */
-
-.wrapper > div:first-of-type {
-	padding-right: 1.5rem;
-}
 
 form dd:first-of-type > input {
 	margin-top: 2rem;
@@ -77,25 +88,75 @@ form dd:first-of-type > input {
 
 /* ================ VOORDELEN ================= */
 
-.wrapper > .column + .column {
-	padding-left: 1.5rem;
-}
-
 #voordelen img {
 	float: left;
 	width: 30%;
 }
 
 #voordelen section {
-	clear: both;
+	margin-bottom: 1.5rem;
 }
 
 #voordelen section:last-of-type {
-	margin-top: 4.6rem;
+	margin-bottom: 3rem;
 }
 
 #voordelen p {
 	float: left;
 	width: 70%;
 	padding-left: 2rem;
+}
+
+/* =============================================
+ * MEDIA QUERIES
+ =============================================== */
+
+@media (min-width: 60em) {
+	.wrapper > section:first-child .column {
+		width: 50%;
+	}
+
+	.wrapper > section:first-child {
+		background-color: #F3F3F3;
+		background-clip: border-box;
+		position: static;
+	}
+
+	.wrapper > section:first-child img {
+		opacity: 1;
+	}
+
+	.wrapper > section:first-child .column + .column {
+		left: auto;
+		right: auto;
+		padding: 0 6rem 0 3rem;
+		margin: 5rem 0 0 0;
+		text-align: left;
+		position: static;
+	}
+
+	.wrapper > section:first-child .column p {
+		color: #000;
+	}
+
+	.wrapper > .column {
+		width: 50%;
+	}
+
+	.wrapper > div:first-of-type {
+		padding-right: 1.5rem;
+	}
+
+	.wrapper > .column + .column {
+		padding-left: 1.5rem;
+	}
+
+	#voordelen section {
+		margin-bottom: 0;
+		clear: both;
+	}
+
+	#voordelen section:last-of-type {
+		margin-top: 4.6rem;
+	}
 }

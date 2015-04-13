@@ -30,10 +30,6 @@ body > * {
 	font-size: 1.5rem;
 }
 
-html, body {
-	overflow-x: hidden; /* CSS hack for full width background color (hide horizontal overflow) */
-}
-
 .wrapper {
 	min-width: 48rem;
 	max-width: 96rem;
@@ -76,11 +72,14 @@ header .wrapper {
 
 /* ================ SOCIAL ================= */
 
-.socialmedia {
-	float: left;
-	margin: 0 -9999rem; /* CSS hack for full width background color */
-	padding: 0.5rem 9999rem; /* CSS hack for full width background color */
+header header {
 	background-color: #484545;
+	position: relative;
+}
+
+.socialmedia {
+	padding: 0.5rem 0;
+	float: left;
 }
 
 .socialmedia li {
@@ -117,6 +116,10 @@ header .wrapper {
 	text-transform: uppercase;
 	color: #888888;
 	margin-bottom: 3rem;
+	position: absolute;
+	top: 0;
+	right: 1rem;
+	text-align: right;
 }
 
 #call p {
@@ -312,6 +315,10 @@ footer a {
 		margin: 3rem 0 0 0;
 	}
 
+	header header {
+		position: static;
+	}
+
 	.socialmedia {
 		float: right;
 	}
@@ -325,6 +332,7 @@ footer a {
 		color: #fff;
 		background-color: #484545;
 		border-radius: 0 0 0.6rem 0.6rem;
+		position: static;
 	}
 
 	#call p {

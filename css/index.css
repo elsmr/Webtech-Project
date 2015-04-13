@@ -30,15 +30,15 @@
 .wrapper > section:first-child .column + .column {
 	left: 0;
 	right: 0;
-	margin: 10% auto;
+	margin: 7% auto;
 	padding: 0 3.5rem;
 	position: absolute;
 	text-align: center;
 }
 
 .wrapper > section:first-child .column p {
-	margin-bottom: 5rem;
-	font-size: 1.6rem;
+	margin-bottom: 3rem;
+	font-size: 1.3rem;
 	color: #fff;
 }
 
@@ -62,8 +62,11 @@
 
 /* ================ GENERAL ================= */
 
+body > header + .wrapper > * {
+	margin-bottom: 3rem;
+}
+
 .wrapper > .column {
-	margin: 3rem 0;
 	width: 100%;
 }
 
@@ -80,7 +83,6 @@ form dd:first-of-type > input {
 
 .wrapper > div:first-of-type div p:first-child {
 	text-transform: uppercase;
-	font-size: 1.6rem;
 	font-weight: 400;
 	color: #67C83D;
 }
@@ -97,10 +99,6 @@ form dd:first-of-type > input {
 	margin-bottom: 1.5rem;
 }
 
-#voordelen section:last-of-type {
-	margin-bottom: 3rem;
-}
-
 #voordelen p {
 	float: left;
 	width: 70%;
@@ -111,9 +109,75 @@ form dd:first-of-type > input {
  * MEDIA QUERIES
  =============================================== */
 
-@media (min-width: 60em) {
-	.wrapper > section:first-child .column {
+@media (min-width: 31em) {
+	.wrapper > section:first-child .column + .column {
+		margin: 10% auto;
+	}
+
+	.wrapper > section:first-child .column p {
+		margin-bottom: 5rem;
+		font-size: 1.5rem;
+	}
+
+	.wrapper > div:first-of-type div p:first-child {
+		font-size: 1.6rem;
+	}
+}
+
+@media (min-width: 39.5em) {
+	#voordelen section {
+		float: left;
 		width: 50%;
+	}
+
+	#voordelen img {
+		width: 100%;
+	}
+
+	#voordelen p {
+		width: 100%;
+		padding: 1rem 0 0 0;
+	}
+
+	#voordelen section + section .contentblock {
+		margin-left: 1rem;
+	}
+
+	#voordelen section:first-of-type .contentblock {
+		margin-right: 1rem;
+	}
+
+	.wrapper > section:first-child .column + .column {
+		margin: 20% auto;
+	}
+
+	.wrapper > section:first-child .column p {
+		padding: 0 4rem;
+	}
+}
+
+
+@media (min-width: 50em) {
+	#voordelen section {
+		float: none;
+		width: auto;
+	}
+
+	#voordelen img {
+		width: 30%;
+	}
+
+	#voordelen p {
+		width: 70%;
+		padding: 0 0 0 2rem;
+	}
+
+	#voordelen section + section .contentblock {
+		margin-left: 0;
+	}
+
+	#voordelen section:first-of-type .contentblock {
+		margin-right: 0;
 	}
 
 	.wrapper > section:first-child {
@@ -129,14 +193,20 @@ form dd:first-of-type > input {
 	.wrapper > section:first-child .column + .column {
 		left: auto;
 		right: auto;
-		padding: 0 6rem 0 3rem;
-		margin: 5rem 0 0 0;
 		text-align: left;
 		position: static;
+		padding: 0 6rem 0 3rem;
+		margin: 5rem 0 0 0;
+	}
+
+	.wrapper > section:first-child .column {
+		width: 50%;
 	}
 
 	.wrapper > section:first-child .column p {
 		color: #000;
+		margin-bottom: 5rem;
+		padding: 0;
 	}
 
 	.wrapper > .column {
@@ -157,6 +227,6 @@ form dd:first-of-type > input {
 	}
 
 	#voordelen section:last-of-type {
-		margin-top: 4.6rem;
+		margin-top: 1.25rem;
 	}
 }

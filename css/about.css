@@ -15,6 +15,10 @@ strong {
 	color: #7A7878;
 }
 
+p {
+	font-size: 1.3rem;
+}
+
 /* =============================================
  * OVER ONS
  =============================================== */
@@ -79,15 +83,10 @@ section:nth-child(3) h2 {
  * MEDIA QUERIES
  =============================================== */
 
-@media (min-width: 50em) {
-	.wrapper > section:first-child .column {
-		float: left;
-		width: 50%;
-	}
 
-	section:first-child .column + .column {
-		padding: 0 6rem 0 3rem;
-		margin-top: 5rem;
+@media (min-width: 42em) {
+	p {
+		font-size: inherit;
 	}
 
 	section:nth-child(2) div {
@@ -106,6 +105,18 @@ section:nth-child(3) h2 {
 
 	section:nth-child(2) div:nth-child(3) {
 		padding-left: 1.5rem;
+	}
+}
+
+@media (min-width: 50em) {
+	.wrapper > section:first-child .column {
+		float: left;
+		width: 50%;
+	}
+
+	.wrapper > section:first-child .column + .column {
+		padding: 0 6rem 0 3rem;
+		margin-top: 5rem;
 	}
 
 	section:nth-child(3) .column {

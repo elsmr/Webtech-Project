@@ -22,14 +22,12 @@ strong {
 /* ================ GENERAL ================= */ 
 
 .wrapper > section:first-child .column {
-	width: 50%;
+	float: none;
+	width: 100%;
 }
 
-/* ================ TEXT COLUMN ================= */
-
-section:first-child .column + .column {
-	padding: 0 6rem 0 3rem;
-	margin-top: 5rem;
+.wrapper > section:first-child .column + .column {
+	margin-top: 1rem;
 }
 
 /* =============================================
@@ -39,7 +37,8 @@ section:first-child .column + .column {
  /* ================ GENERAL ================= */
 
 section:nth-child(2) div {
-	width: 50%;
+	float: none;
+	padding: 0 2rem;
 }
 
 section:nth-child(2) h2 {
@@ -47,20 +46,8 @@ section:nth-child(2) h2 {
 	margin: 3rem 0;
 }
 
-section:nth-child(2) p + p {
+section:nth-child(2) p + p, section:nth-child(2) .column + .column p:first-child {
 	margin-top: 1.5rem;
-}
-
-/* ================ LEFT COLUMN ================= */
-
-section:nth-child(2) div:nth-child(2) {
-	padding-right: 1.5rem;
-}
-
-/* ================ RIGHT COLUMN ================= */
-
-section:nth-child(2) div:nth-child(3) {
-	padding-left: 1.5rem;
 }
 
 /* =============================================
@@ -76,18 +63,62 @@ section:nth-child(3) {
 	border-bottom: 0.2rem solid #D5D5D5;
 }
 
+section:nth-child(3) .column {
+	float: none;
+}
+
 /* ================ LEFT TITLE ================= */
 
 section:nth-child(3) h2 {
-	width: 15%;
-	margin-top: 2rem;
-	line-height: 3rem;
+	text-align: center;
 	font-weight: 800;
 	font-size: 3rem;
 }
 
-/* ================ RIGHT TEXT ================= */
+/* =============================================
+ * MEDIA QUERIES
+ =============================================== */
 
-section:nth-child(3) p {
-	width: 85%;
+@media (min-width: 50em) {
+	.wrapper > section:first-child .column {
+		float: left;
+		width: 50%;
+	}
+
+	section:first-child .column + .column {
+		padding: 0 6rem 0 3rem;
+		margin-top: 5rem;
+	}
+
+	section:nth-child(2) div {
+		float: left;
+		width: 50%;
+		padding: 0;
+	}
+
+	section:nth-child(2) .column + .column p:first-child {
+		margin-top: 0;
+	}
+
+	section:nth-child(2) div:nth-child(2) {
+		padding-right: 1.5rem;
+	}
+
+	section:nth-child(2) div:nth-child(3) {
+		padding-left: 1.5rem;
+	}
+
+	section:nth-child(3) .column {
+		float: left;
+	}
+
+	section:nth-child(3) h2 {
+		width: 15%;
+		padding: 2rem 1rem 0 0;
+		line-height: 3rem;
+	}
+
+	section:nth-child(3) p {
+		width: 85%;
+	}
 }

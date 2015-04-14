@@ -156,7 +156,6 @@ form dd:first-of-type > input {
 	}
 }
 
-
 @media (min-width: 50em) {
 	#voordelen section {
 		float: none;

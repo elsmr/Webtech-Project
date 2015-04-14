@@ -325,8 +325,7 @@ footer a {
 	}
 }
 
-
-@media (min-width: 60em) {
+@media (min-width: 52em) {
 	header .wrapper {
 		padding: 0;
 	}
@@ -382,7 +381,10 @@ footer a {
 	#mainmenu li li a {
 		padding: 0;
 	}
+}
 
+
+@media (min-width: 60em) {
 	footer {
 		text-align: none;
 		padding: 0;

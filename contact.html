@@ -7,27 +7,6 @@
 	<link rel="stylesheet" href="css/library.css" />
 	<link rel="stylesheet" href="css/contact.css" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,800,400' rel='stylesheet' type='text/css'>
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
-	<script>
-		function initialize() {
-			var myLatlng = new google.maps.LatLng(51.056188, 3.721155);
-			var mapCanvas = document.getElementById('gmap');
-			var mapOptions = {
-				center: myLatlng,
-				zoom: 17,
-				mapTypeId: google.maps.MapTypeId.ROADMAP,
-				disableDefaultUI: true,
-				zoomControl: true
-			}
-			var map = new google.maps.Map(mapCanvas, mapOptions)
-			var marker = new google.maps.Marker({
-				position: myLatlng,
-				map: map,
-				title:"Oude Vismijn"
-			});
-		}
-		google.maps.event.addDomListener(window, 'load', initialize);
-	</script>
 </head>
 <body>
 	<!-- HEADER -->
@@ -73,7 +52,7 @@
 	<!-- CONTENT -->
 	<div class="wrapper">
 		<section class="clearfix">
-			<div class="column">
+			<div class="columnc clearfix">
 				<h2>Contact</h2>
 				<p>Oude Vismijn</p>
 				<p>Sint-Veerleplein 5</p>
@@ -103,7 +82,9 @@
 
 		<section>
 			<h2 class="structural">Google Map</h2>
-			<div id="gmap"></div>
+			<a href="https://www.google.com/maps/place/De+Oude+Vismijn/@51.056205,3.721101,17z">
+				<img src="http://maps.googleapis.com/maps/api/staticmap?center=Oude+vismijn+Gent&zoom=15&scale=2&size=640x267&markers=size:smal%7COude+vismijn+Gent" alt="Google Map of Oude vismijn Gent" />
+			</a>
 		</section>
 	</div>
 	<!-- CONTENT END -->

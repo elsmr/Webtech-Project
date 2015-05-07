@@ -25,19 +25,19 @@
  * LOREM IPSUM DOLOR (3 COLUMN)
  =============================================== */
 
-.wrapper > section:nth-child(2) {
+#voordelen {
 	margin: 3rem 0;
 }
 
-.wrapper > section:nth-child(2) .column { 
+#voordelen .column { 
 	float: none;
 }
 
-.wrapper > section:nth-child(2) .column + .column{ 
+#voordelen .column + .column{ 
 	margin-top: 1.5rem;
 }
 
-.wrapper > section:nth-child(2) .contentblock {
+#voordelen .contentblock {
 	padding-bottom: 4rem;
 	font-size: 1.4rem;
 }
@@ -47,24 +47,24 @@
  =============================================== */
 
 @media (min-width: 42em) {
-	.wrapper > section:nth-child(2) .column {
+	#voordelen .column {
 		width: 33.33%;
 		float: left;
 	}
 
-	.wrapper > section:nth-child(2) .column + .column{ 
+	#voordelen .column + .column{ 
 		margin-top: 0;
 	}
 
-	.wrapper > section:nth-child(2) > div:first-of-type .contentblock {
+	#voordelen > div:first-of-type .contentblock {
 		margin-right: 6%;
 	}
 
-	.wrapper > section:nth-child(2) > div:nth-of-type(2) .contentblock {
+	#voordelen > div:nth-of-type(2) .contentblock {
 		margin: 0 3%;
 	}
 
-	.wrapper > section:nth-child(2) > div:nth-of-type(3) .contentblock {
+	#voordelen > div:nth-of-type(3) .contentblock {
 		margin-left: 6%;
 	}
 }

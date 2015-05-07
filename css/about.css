@@ -16,7 +16,7 @@ strong {
 }
 
 p {
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 }
 
 /* =============================================
@@ -40,17 +40,17 @@ p {
 
  /* ================ GENERAL ================= */
 
-section:nth-child(2) div {
+#idee div {
 	float: none;
 	padding: 0 2rem;
 }
 
-section:nth-child(2) h2 {
+#idee h2 {
 	text-align: center;
 	margin: 3rem 0;
 }
 
-section:nth-child(2) p + p, section:nth-child(2) .column + .column p:first-child {
+#idee p + p, #idee .column + .column p:first-child {
 	margin-top: 1.5rem;
 }
 
@@ -60,20 +60,20 @@ section:nth-child(2) p + p, section:nth-child(2) .column + .column p:first-child
 
 /* ================ GENERAL ================= */
 
-section:nth-child(3) {
+#lorem {
 	margin: 6rem 0 3rem 0;
 	padding: 3rem 0;
 	border-top: 0.2rem solid #D5D5D5;
 	border-bottom: 0.2rem solid #D5D5D5;
 }
 
-section:nth-child(3) .column {
+#lorem .column {
 	float: none;
 }
 
 /* ================ LEFT TITLE ================= */
 
-section:nth-child(3) h2 {
+#lorem h2 {
 	text-align: center;
 	font-weight: 800;
 	font-size: 3rem;
@@ -89,21 +89,21 @@ section:nth-child(3) h2 {
 		font-size: inherit;
 	}
 
-	section:nth-child(2) div {
+	#idee div {
 		float: left;
 		width: 50%;
 		padding: 0;
 	}
 
-	section:nth-child(2) .column + .column p:first-child {
+	#idee .column + .column p:first-child {
 		margin-top: 0;
 	}
 
-	section:nth-child(2) div:nth-child(2) {
+	#idee div:nth-child(2) {
 		padding-right: 1.5rem;
 	}
 
-	section:nth-child(2) div:nth-child(3) {
+	#idee div:nth-child(3) {
 		padding-left: 1.5rem;
 	}
 }
@@ -119,17 +119,17 @@ section:nth-child(3) h2 {
 		margin-top: 5rem;
 	}
 
-	section:nth-child(3) .column {
+	#lorem .column {
 		float: left;
 	}
 
-	section:nth-child(3) h2 {
+	#lorem h2 {
 		width: 15%;
 		padding: 2rem 1rem 0 0;
 		line-height: 3rem;
 	}
 
-	section:nth-child(3) p {
+	#lorem p {
 		width: 85%;
 	}
 }

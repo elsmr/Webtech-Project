@@ -11,7 +11,7 @@
 
 /* ================ FORM COLUMN ================= */
 
-.wrapper section div {
+section div {
 	float: none;
 	width: 100%;
 }
@@ -41,15 +41,16 @@ a img {
  =============================================== */
 
 @media (min-width: 45em) {
-	.wrapper section div {
+	section div {
 		float: left;
 	}
-	.wrapper section div:first-child {
+	
+	section div:first-child {
 		width: 25%;
 		margin: 5rem 0 0 0;
 	}
 
-	.wrapper section div:nth-child(2) {
+	section div:nth-child(2) {
 		width: 75%;
 	}
 	

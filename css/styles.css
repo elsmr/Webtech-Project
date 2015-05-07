@@ -63,7 +63,7 @@ header section:first-of-type {
 header {
 	font-weight: 700;	
 	text-align: right;
-	background-color: #EBECE4;	
+	background-color: #EBECE4;
 }
 
 header .wrapper {
@@ -385,6 +385,11 @@ footer a {
 
 
 @media (min-width: 60em) {
+	body {
+		background-image: url(../img/bg.png);
+		background-repeat: repeat-x;
+	}
+
 	footer {
 		text-align: none;
 		padding: 0;

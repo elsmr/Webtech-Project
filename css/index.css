@@ -16,13 +16,19 @@
 }
 
 .wrapper > section:first-child {
-	background-color: black;
+	background-color: #000;
 	background-clip: content-box;
 	position: relative;
+	padding: 0;
+	border: 2rem solid #F3F3F3;
 }
 
 .wrapper > section:first-child img {
 	opacity: 0.5;
+}
+
+.wrapper > section:first-child h2 {
+	font-size: 2.2rem;
 }
 
 /* ================ TEXT COLUMN  ================= */
@@ -83,23 +89,22 @@ form dd:first-of-type > input {
 
 .wrapper > div:first-of-type div p:first-child {
 	text-transform: uppercase;
-	font-weight: 400;
 	color: #67C83D;
 }
 
 
 /* ================ VOORDELEN ================= */
 
-#voordelen img {
+#benefits img {
 	float: left;
 	width: 30%;
 }
 
-#voordelen section {
+#benefits section {
 	margin-bottom: 1.5rem;
 }
 
-#voordelen p {
+#benefits p {
 	float: left;
 	width: 70%;
 	padding-left: 2rem;
@@ -125,25 +130,25 @@ form dd:first-of-type > input {
 }
 
 @media (min-width: 39.5em) {
-	#voordelen section {
+	#benefits section {
 		float: left;
 		width: 50%;
 	}
 
-	#voordelen img {
+	#benefits img {
 		width: 100%;
 	}
 
-	#voordelen p {
+	#benefits p {
 		width: 100%;
 		padding: 1rem 0 0 0;
 	}
 
-	#voordelen section + section .contentblock {
+	#benefits section + section .contentblock {
 		margin-left: 1rem;
 	}
 
-	#voordelen section:first-of-type .contentblock {
+	#benefits section:first-of-type .contentblock {
 		margin-right: 1rem;
 	}
 
@@ -157,25 +162,25 @@ form dd:first-of-type > input {
 }
 
 @media (min-width: 50em) {
-	#voordelen section {
+	#benefits section {
 		float: none;
 		width: auto;
 	}
 
-	#voordelen img {
+	#benefits img {
 		width: 30%;
 	}
 
-	#voordelen p {
+	#benefits p {
 		width: 70%;
 		padding: 0 0 0 2rem;
 	}
 
-	#voordelen section + section .contentblock {
+	#benefits section + section .contentblock {
 		margin-left: 0;
 	}
 
-	#voordelen section:first-of-type .contentblock {
+	#benefits section:first-of-type .contentblock {
 		margin-right: 0;
 	}
 
@@ -220,12 +225,12 @@ form dd:first-of-type > input {
 		padding-left: 1.5rem;
 	}
 
-	#voordelen section {
+	#benefits section {
 		margin-bottom: 0;
 		clear: both;
 	}
 
-	#voordelen section:last-of-type {
+	#benefits section:last-of-type {
 		margin-top: 1.25rem;
 	}
 }

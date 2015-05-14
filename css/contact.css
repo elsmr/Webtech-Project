@@ -9,20 +9,20 @@
  * FORM
  =============================================== */
 
-/* ================ FORM COLUMN ================= */
+/* ================ GENERAL ================= */
 
-section div {
+section div.column {
 	float: none;
 	width: 100%;
 }
 
 /* ================ TEXT COLUMN ================= */
 
-section:first-of-type div:first-child {
+body > .wrapper > section:first-of-type div:first-child {
 	margin-bottom: 1rem;
 }
 
-section:first-of-type div:first-child p {
+body > .wrapper > section:first-of-type div:first-child p {
 	float: left;
 	padding-right: 1rem;
 }
@@ -41,20 +41,20 @@ a img {
  =============================================== */
 
 @media (min-width: 45em) {
-	section div {
+	section div.column {
 		float: left;
 	}
 	
-	section div:first-child {
+	section div.column:first-child {
 		width: 25%;
 		margin: 5rem 0 0 0;
 	}
 
-	section div:nth-child(2) {
+	section div.column:nth-child(2) {
 		width: 75%;
 	}
 	
-	section:first-of-type div:first-child p {
+	body > .wrapper > section:first-of-type div:first-child p {
 		float: none;
 		padding-right: 0;
 	}

@@ -15,15 +15,13 @@ strong {
 	color: #7A7878;
 }
 
-p {
+body > .wrapper p {
 	font-size: 1.4rem;
 }
 
 /* =============================================
  * OVER ONS
  =============================================== */
-
-/* ================ GENERAL ================= */ 
 
 .wrapper > section:first-child .column {
 	float: none;
@@ -38,19 +36,17 @@ p {
  * TOECOURT IS EEN IDEE
  =============================================== */
 
- /* ================ GENERAL ================= */
-
-#idee div {
+#idea div {
 	float: none;
 	padding: 0 2rem;
 }
 
-#idee h2 {
+#idea h2 {
 	text-align: center;
 	margin: 3rem 0;
 }
 
-#idee p + p, #idee .column + .column p:first-child {
+#idea p + p, #idea .column + .column p:first-child {
 	margin-top: 1.5rem;
 }
 
@@ -89,21 +85,21 @@ p {
 		font-size: inherit;
 	}
 
-	#idee div {
+	#idea div {
 		float: left;
 		width: 50%;
 		padding: 0;
 	}
 
-	#idee .column + .column p:first-child {
+	#idea .column + .column p:first-child {
 		margin-top: 0;
 	}
 
-	#idee div:nth-child(2) {
+	#idea div:nth-child(2) {
 		padding-right: 1.5rem;
 	}
 
-	#idee div:nth-child(3) {
+	#idea div:nth-child(3) {
 		padding-left: 1.5rem;
 	}
 }

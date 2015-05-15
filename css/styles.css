@@ -78,7 +78,7 @@ header .wrapper {
 
 /* ================ SOCIAL ================= */
 
-header section {
+header div:first-of-type {
 	background-color: #484545;
 }
 

@@ -335,10 +335,6 @@ footer a {
 }
 
 @media (min-width: 52em) {
-	header .wrapper {
-		padding: 0;
-	}
-
 	h1 a {
 		clear: none;
 		float: left;

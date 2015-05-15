@@ -34,7 +34,7 @@ body > * {
 }
 
 body > .wrapper{
-	margin: 0 1rem;
+	padding: 0 1rem;
 }
 
 .wrapper {
@@ -74,7 +74,6 @@ header {
 
 header .wrapper {
 	padding: 0 1rem;
-	margin: 0 1rem;
 }
 
 /* ================ SOCIAL ================= */
@@ -412,6 +411,6 @@ footer a {
 
 @media (min-width: 62em) {
 	body > .wrapper, header .wrapper {
-		margin: auto;
+		padding: 0;
 	}
 }

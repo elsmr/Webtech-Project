@@ -6,7 +6,7 @@
  */
 
 /* =============================================
- * LOREM IPSUM (1COLUMN)
+ * EVENTS VOOR PARTICULIEREN PARTICULIEREN
  =============================================== */
 
 .wrapper > section:first-child * {
@@ -22,22 +22,22 @@
 }
 
 /* =============================================
- * LOREM IPSUM DOLOR (3 COLUMN)
+ * CATEGORIEEN (3 COLUMN)
  =============================================== */
 
-#voordelen {
+#categories {
 	margin: 3rem 0;
 }
 
-#voordelen .column { 
+#categories .column { 
 	float: none;
 }
 
-#voordelen .column + .column{ 
+#categories .column + .column{ 
 	margin-top: 1.5rem;
 }
 
-#voordelen .contentblock {
+#categories .contentblock {
 	padding-bottom: 4rem;
 	font-size: 1.4rem;
 }
@@ -47,24 +47,24 @@
  =============================================== */
 
 @media (min-width: 42em) {
-	#voordelen .column {
+	#categories .column {
 		width: 33.33%;
 		float: left;
 	}
 
-	#voordelen .column + .column{ 
+	#categories .column + .column{ 
 		margin-top: 0;
 	}
 
-	#voordelen > div:first-of-type .contentblock {
+	#categories > div:first-of-type .contentblock {
 		margin-right: 6%;
 	}
 
-	#voordelen > div:nth-of-type(2) .contentblock {
+	#categories > div:nth-of-type(2) .contentblock {
 		margin: 0 3%;
 	}
 
-	#voordelen > div:nth-of-type(3) .contentblock {
+	#categories > div:nth-of-type(3) .contentblock {
 		margin-left: 6%;
 	}
 }
